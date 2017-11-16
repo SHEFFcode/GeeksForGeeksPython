@@ -6,7 +6,7 @@ class Quicksort:
             self.quicksort_wrapper(a, partition_index + 1, end)
 
     @staticmethod
-    def partition(self, a, start, end):
+    def partition(a, start, end):
         pivot = a[end]
         i = start - 1
         for j in range(start, end, 1):

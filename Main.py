@@ -2,9 +2,16 @@ class Main:
     from SelectionSort import SelectionSort
     from StableSelectionSort import StableSelctionSort
     from InsertionSort import InsertionSort
+    from Quicksort import Quicksort
 
-    insertionSort = InsertionSort()
-    insertionSort.Run([23, 42, 4, 16, 8, 15])
+    quickSort = Quicksort()
+    input_arr = [7, 2, 1, 6, 8, 5, 3, 4]
+    quickSort.quicksort_wrapper(input_arr, 0, len(input_arr) - 1)
+    for i in input_arr:
+        print i
+
+    # insertionSort = InsertionSort()
+    # insertionSort.Run([23, 42, 4, 16, 8, 15])
 
     # selectionSort = SelectionSort()
     # selectionSort.Run([23, 42, 4, 16, 8, 15])
