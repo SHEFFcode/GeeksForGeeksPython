@@ -1,5 +1,5 @@
 class InsertionSort:
-    def run(inputArr):
+    def Run(self, inputArr):
         length = len(inputArr)
         for i in range(0, length, 1):
             key = inputArr[i]
