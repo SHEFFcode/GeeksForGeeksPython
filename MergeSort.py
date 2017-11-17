@@ -8,16 +8,20 @@ class MergeSort:
 
     @staticmethod
     def merge(arr, l, m, r):
-        n1 = m - 1 + 1
+        n1 = m - l + 1
         n2 = r - m
+        i, j = 0, 0
 
-        L = [None] * n1
-        R = [None] * n2
+        L = range(0, n1)
+        R = range(0, n2)
 
-        for i in range(0, n1, 1):
-            L[i] = arr[l + 1]
-        for j in range(0, n2, 1):
+        while i < n1:
+            L[i] = arr[l + i]
+            i += 1
+
+        while j < n2:
             R[j] = arr[m + 1 + j]
+            j += 1
 
         k = l
         i, j = 0, 0
@@ -28,6 +32,11 @@ class MergeSort:
             else:
                 arr[k] = R[j]
                 j += 1
+            k += 1
+
+        while i < n1:
+            arr[k] = L[i]
+            i += 1
             k += 1
 
         while j < n2:
