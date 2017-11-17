@@ -8,38 +8,36 @@ class MergeSort:
 
     @staticmethod
     def merge(arr, l, m, r):
-        n1 = m - l + 1
-        n2 = r - m
-        i, j = 0, 0
+        n1 = m - l + 1  # length of the left half (excluding mid)
+        n2 = r - m  # length of right half (including mid)
+        i, j = 0, 0  # iterator vars for later
 
-        L = range(0, n1)
-        R = range(0, n2)
+        left_half = range(0, n1)  # left half container
+        right_half = range(0, n2)  # right half container
 
-        while i < n1:
-            L[i] = arr[l + i]
+        while i < n1:  # fill in the left half from arr
+            left_half[i] = arr[l + i]
             i += 1
 
-        while j < n2:
-            R[j] = arr[m + 1 + j]
+        while j < n2:  # fill in the right half from array
+            right_half[j] = arr[m + 1 + j]
             j += 1
 
-        k = l
-        i, j = 0, 0
-        while i < n1 and j < n2:
-            if L[i] <= R[j]:
-                arr[k] = L[i]
+        k = l  # keep track of left bound
+        i, j = 0, 0  # reset iterator vars
+        while i < n1 and j < n2:  # while both left and right half pointers are in bounds (there are items to compare)
+            if left_half[i] <= right_half[j]:
+                arr[k] = left_half[i]
                 i += 1
             else:
-                arr[k] = R[j]
+                arr[k] = right_half[j]
                 j += 1
             k += 1
 
-        while i < n1:
-            arr[k] = L[i]
-            i += 1
-            k += 1
+        while i < n1:  # any remaining left half items
+            arr[k] = left_half[i]
+            i, k = i + 1, k + 1
 
         while j < n2:
-            arr[k] = R[j]
-            j += 1
-            k += 1
+            arr[k] = right_half[j]  # any remaining right half items
+            j, k = j + 1, k + 1
