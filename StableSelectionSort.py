@@ -1,21 +1,21 @@
 class StableSelctionSort:
-    def Run(self, inputArr):
-        length = len(inputArr)
+    def run(self, input_arr):
+        length = len(input_arr)
 
         for i in range(0, length - 1, 1):
             lowestItemIndex = i
 
             for j in range(i, length, 1):
-                if inputArr[j] < inputArr[lowestItemIndex]:
+                if input_arr[j] < input_arr[lowestItemIndex]:
                     lowestItemIndex = j
 
-            key = inputArr[lowestItemIndex]
+            key = input_arr[lowestItemIndex]
             while lowestItemIndex > i:
-                inputArr[lowestItemIndex] = inputArr[lowestItemIndex - 1]
+                input_arr[lowestItemIndex] = input_arr[lowestItemIndex - 1]
                 lowestItemIndex -= 1
-            inputArr[i] = key
+            input_arr[i] = key
 
-        for item in inputArr:
+        for item in input_arr:
             print item
 
 
