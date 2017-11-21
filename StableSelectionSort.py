@@ -9,11 +9,11 @@ class StableSelctionSort:
                 if input_arr[j] < input_arr[lowest_item_index]:  # if the subsequent to i value is lower then one @ i
                     lowest_item_index = j  # lowest item index becomes the value at j
 
-            key = input_arr[lowest_item_index]  # the value of the item at lowest_item_index
+            lowest_item_index_value = input_arr[lowest_item_index]  # the value of the item at lowest_item_index
             while lowest_item_index > i:  # here we are moving the items to the right to free up some space
                 input_arr[lowest_item_index] = input_arr[lowest_item_index - 1]
                 lowest_item_index -= 1
-            input_arr[i] = key  # we put the value of lowest_item_index into that spot in the array
+            input_arr[i] = lowest_item_index_value  # we put the value of lowest_item_index into that spot in the array
 
         for item in input_arr:
             print item
