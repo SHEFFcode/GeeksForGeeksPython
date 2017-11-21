@@ -4,10 +4,10 @@ class MergeSort:
             m = (l + r) / 2
             self.run(arr, l, m)
             self.run(arr, m + 1, r)
-            self.merge(arr, l, m, r)
+            self._merge(arr, l, m, r)
 
     @staticmethod
-    def merge(arr, l, m, r):
+    def _merge(arr, l, m, r):
         left_half_size = m - l + 1  # length of the left half (excluding mid)
         right_half_size = r - m  # length of right half (including mid)
         i, j = 0, 0  # iterator vars for later
