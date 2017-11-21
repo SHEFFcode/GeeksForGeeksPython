@@ -3,16 +3,16 @@ class StableSelctionSort:
         length = len(input_arr)
 
         for i in range(0, length - 1, 1):
-            lowestItemIndex = i
+            lowest_item_index = i
 
             for j in range(i, length, 1):
-                if input_arr[j] < input_arr[lowestItemIndex]:
-                    lowestItemIndex = j
+                if input_arr[j] < input_arr[lowest_item_index]:
+                    lowest_item_index = j
 
-            key = input_arr[lowestItemIndex]
-            while lowestItemIndex > i:
-                input_arr[lowestItemIndex] = input_arr[lowestItemIndex - 1]
-                lowestItemIndex -= 1
+            key = input_arr[lowest_item_index]
+            while lowest_item_index > i:
+                input_arr[lowest_item_index] = input_arr[lowest_item_index - 1]
+                lowest_item_index -= 1
             input_arr[i] = key
 
         for item in input_arr:
