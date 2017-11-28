@@ -1,9 +1,5 @@
 class Main:
-    from SelectionSort import SelectionSort
-    from StableSelectionSort import StableSelctionSort
-    from InsertionSort import InsertionSort
-    from Quicksort import Quicksort
-    from MergeSort import MergeSort
+    from Sorting.MergeSort import MergeSort
 
     mergeSort = MergeSort()
     input_arr = [38, 27, 43, 3, 9, 82, 10]
