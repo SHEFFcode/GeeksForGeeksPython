@@ -15,25 +15,25 @@ of various algorithms along with video explanations and links to relevant resour
 
 ### Sorting
 * General Comparison of sort algos:
-  * [Theory](https://github.com/SHEFFcode/GeeksForGeeks/blob/master/GeeksForGeeks/Sorting/AlgoComparison.md)
+  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Sorting/AlgoComparison.md)
 * Selection Sort:
-  * [Theory](https://github.com/SHEFFcode/GeeksForGeeks/blob/master/GeeksForGeeks/Sorting/SelectionSort.md)
-  * [Code Link](https://github.com/SHEFFcode/GeeksForGeeks/blob/master/GeeksForGeeks/Sorting/SelectionSort.cs)
+  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Sorting/SelectionSort.md)
+  * [Code Link](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Sorting/SelectionSort.py)
   * [Video Link](https://youtu.be/qkEWDCjc8DU)
 * Stable Selection Sort:
-  * [Theory](https://github.com/SHEFFcode/GeeksForGeeks/blob/master/GeeksForGeeks/Sorting/StableSelectionSort.md)
-  * [Code](https://github.com/SHEFFcode/GeeksForGeeks/blob/master/GeeksForGeeks/Sorting/StableSelectionSort.cs)
+  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Sorting/StableSelectionSort.md)
+  * [Code](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Sorting/StableSelectionSort.py)
 * Insertion Sort:
-  * [Theory Link](https://github.com/SHEFFcode/GeeksForGeeks/blob/master/GeeksForGeeks/Sorting/InsertionSort.md)
-  * [Code Link](https://github.com/SHEFFcode/GeeksForGeeks/blob/master/GeeksForGeeks/Sorting/InsertionSort.cs)
+  * [Theory Link](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Sorting/InsertionSort.md)
+  * [Code Link](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Sorting/InsertionSort.py)
   * [Video Link](https://youtu.be/Nbb4aNBTIBc)
 * Quick Sort:
-  * [Theory Link](https://github.com/SHEFFcode/GeeksForGeeks/blob/master/GeeksForGeeks/Sorting/QuickSort.md)
-  * [Code Link](https://github.com/SHEFFcode/GeeksForGeeks/blob/master/GeeksForGeeks/Sorting/Quicksort.cs)
+  * [Theory Link](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Sorting/QuickSort.md)
+  * [Code Link](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Sorting/Quicksort.py)
   * Video Link (Coming Soon)
 * Merge Sort:
-  * [Theory](https://github.com/SHEFFcode/GeeksForGeeks/blob/master/GeeksForGeeks/Sorting/MergeSort.md)
-  * [Code](https://github.com/SHEFFcode/GeeksForGeeks/blob/master/GeeksForGeeks/Sorting/MergeSort.cs)
+  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Sorting/MergeSort.md)
+  * [Code](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Sorting/MergeSort.py)
 
 ### Search
 * Binary Search:
