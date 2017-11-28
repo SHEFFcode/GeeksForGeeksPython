@@ -38,7 +38,7 @@ of various algorithms along with video explanations and links to relevant resour
 ### Search
 * Binary Search:
   * [Theory](https://github.com/SHEFFcode/GeeksForGeeks/blob/master/GeeksForGeeks/Search/BinarySearch.md)
-  * [Code Link](https://github.com/SHEFFcode/GeeksForGeeks/blob/master/GeeksForGeeks/Search/BinarySearch.cs)
+  * [Code Link](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Search/BinarySearch.py)
   * Video Link (Coming Soon)
 * Interpolation Search
   * [Code Link](https://github.com/SHEFFcode/GeeksForGeeks/blob/master/GeeksForGeeks/Search/InterpolationSearch.cs)
