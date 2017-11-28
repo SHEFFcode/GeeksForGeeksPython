@@ -20,6 +20,7 @@ class BinarySearch:
             mid = left + (right - left) / 2
             if input_arr[mid] == element:
                 print("Found element {0} at position {1}".format(element, mid + 1))
+                break
             elif input_arr[mid] > element:
                 right = mid - 1
             else:
