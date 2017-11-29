@@ -1,10 +1,15 @@
 class Main:
     from Sorting.MergeSort import MergeSort
     from Search.BinarySearch import BinarySearch
+    from Search.InterpolationSearch import InterpolationSearch
 
-    binarySearch = BinarySearch()
-    binarySearch.run_recursive([0, 2, 3, 4, 10, 40, 44], 2, 0, 6)
-    binarySearch.run_iterative([0, 2, 3, 4, 10, 40, 44], 2)
+    interpolationSearch = InterpolationSearch()
+    print interpolationSearch.run_recursive([1, 2, 4, 6, 7, 10, 11, 14, 15], 0, 8, 4)
+    print interpolationSearch.run_iterative([1, 2, 4, 6, 7, 10, 11, 14, 15], 4)
+
+    # binarySearch = BinarySearch()
+    # binarySearch.run_recursive([0, 2, 3, 4, 10, 40, 44], 2, 0, 6)
+    # binarySearch.run_iterative([0, 2, 3, 4, 10, 40, 44], 2)
 
 
     # mergeSort = MergeSort()
