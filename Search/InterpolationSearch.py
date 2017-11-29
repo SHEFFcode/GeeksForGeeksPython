@@ -14,7 +14,7 @@ class InterpolationSearch:
 
     def run_recursive(self, input_arr, start, end, element):
         if start > end:
-            return -1
+            return -1  # we did not find the element
         pos = self._get_position(input_arr, start, end, element)
         if input_arr[pos] == element:
             return pos
