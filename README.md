@@ -52,10 +52,11 @@ of various algorithms along with video explanations and links to relevant resour
   * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Greedy/ActivitySelection.md)
   * [Code Link](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Greedy/ActivitySelection.py)
   * Video Link (coming soon)
-* Djikstra's Algorithm (I call it ditkas, so sue me):
+* Dijkstra's Algorithm (I call it ditkas, so sue me):
+  * [Theory]()
   * [Code Link](https://github.com/SHEFFcode/GeeksForGeeks/blob/master/GeeksForGeeks/Greedy/DitkasAlgo.cs)
   * Video Link (coming soon)
-* Minumum Number of Coins:
+* Minimum Number of Coins:
   * [Theory]()
   * [Code]()
 
