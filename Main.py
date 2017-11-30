@@ -2,10 +2,14 @@ class Main:
     from Sorting.MergeSort import MergeSort
     from Search.BinarySearch import BinarySearch
     from Search.InterpolationSearch import InterpolationSearch
+    from Greedy.ActivitySelection import ActivitySelection
 
-    interpolationSearch = InterpolationSearch()
-    print interpolationSearch.run_recursive([1, 2, 4, 6, 7, 10, 11, 14, 15], 0, 8, 4)
-    print interpolationSearch.run_iterative([1, 2, 4, 6, 7, 10, 11, 14, 15], 4)
+    activitySelection = ActivitySelection()
+    activitySelection.run([1, 3, 0, 5, 8, 5], [2, 4, 6, 7, 9, 9])
+
+    # interpolationSearch = InterpolationSearch()
+    # print interpolationSearch.run_recursive([1, 2, 4, 6, 7, 10, 11, 14, 15], 0, 8, 4)
+    # print interpolationSearch.run_iterative([1, 2, 4, 6, 7, 10, 11, 14, 15], 4)
 
     # binarySearch = BinarySearch()
     # binarySearch.run_recursive([0, 2, 3, 4, 10, 40, 44], 2, 0, 6)
