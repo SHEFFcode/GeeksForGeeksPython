@@ -60,8 +60,8 @@ of various algorithms along with video explanations and links to relevant resour
   * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Greedy/MinNumberOfPlatforms.md)
   * [Code](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Greedy/MinNumberOfPlatforms.py)
 * Minimum Number of Coins:
-  * [Theory]()
-  * [Code]()
+  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Greedy/MinNumberOfCoins.md)
+  * [Code](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Greedy/MinNumberOfCoins.py)
 
 ### Dyanamic Programming
 * Theory:
