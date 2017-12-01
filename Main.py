@@ -3,9 +3,18 @@ class Main:
     from Search.BinarySearch import BinarySearch
     from Search.InterpolationSearch import InterpolationSearch
     from Greedy.ActivitySelection import ActivitySelection
+    from Greedy.MinNumberOfPlatforms import MinNumberOfPlatforms
+    import datetime
 
-    activitySelection = ActivitySelection()
-    activitySelection.run([1, 3, 0, 5, 8, 5], [2, 4, 6, 7, 9, 9])
+    min_number_of_platforms = MinNumberOfPlatforms()
+    min_number_of_platforms.run([datetime.time(9, 0), datetime.time(9, 40), datetime.time(9, 50), datetime.time(11, 00),
+                                datetime.time(18, 00)],
+                                [datetime.time(9, 10), datetime.time(12, 00), datetime.time(11, 20),
+                                datetime.time(11, 30), datetime.time(19, 00), datetime.time(20, 00)]
+                                )
+
+    # activitySelection = ActivitySelection()
+    # activitySelection.run([1, 3, 0, 5, 8, 5], [2, 4, 6, 7, 9, 9])
 
     # interpolationSearch = InterpolationSearch()
     # print interpolationSearch.run_recursive([1, 2, 4, 6, 7, 10, 11, 14, 15], 0, 8, 4)
@@ -14,7 +23,6 @@ class Main:
     # binarySearch = BinarySearch()
     # binarySearch.run_recursive([0, 2, 3, 4, 10, 40, 44], 2, 0, 6)
     # binarySearch.run_iterative([0, 2, 3, 4, 10, 40, 44], 2)
-
 
     # mergeSort = MergeSort()
     # input_arr = [38, 27, 43, 3, 9, 82, 10]
