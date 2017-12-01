@@ -6,9 +6,16 @@ class Main:
     from Greedy.MinNumberOfPlatforms import MinNumberOfPlatforms
     import datetime
     from Greedy.MinNumberOfCoins import MinNumberOfCoins
+    from Greedy.DijkstrasShortestPath import DijkstrasShortestPath
 
-    min_number_of_coins = MinNumberOfCoins()
-    min_number_of_coins.run([1, 2, 5, 10, 20, 50, 100], 121)
+    ditkas_shortest_path = DijkstrasShortestPath()
+    graph = [[0, 4, 0, 0, 0, 0, 0, 8, 0], [4, 0, 8, 0, 0, 0, 0, 11, 0], [0, 8, 0, 7, 0, 4, 0, 0, 2],
+             [0, 0, 7, 0, 9, 14, 0, 0, 0], [0, 0, 0, 9, 0, 10, 0, 0, 0], [0, 0, 4, 14, 10, 0, 2, 0, 0],
+             [0, 0, 0, 0, 0, 2, 0, 1, 6], [8, 11, 0, 0, 0, 0, 1, 0, 7], [0, 0, 2, 0, 0, 0, 6, 7, 0]]
+    ditkas_shortest_path.run(graph, 0)
+
+    # min_number_of_coins = MinNumberOfCoins()
+    # min_number_of_coins.run([1, 2, 5, 10, 20, 50, 100], 121)
 
     # min_number_of_platforms = MinNumberOfPlatforms()
     # min_number_of_platforms.run([datetime.time(9, 0), datetime.time(9, 40), datetime.time(9, 50), datetime.time(11, 00),
@@ -33,7 +40,6 @@ class Main:
     # mergeSort.run(input_arr, 0, len(input_arr) - 1)
     # for i in input_arr:
     #     print(i)
-
 
     # quickSort = Quicksort()
     # input_arr = [7, 2, 1, 6, 8, 5, 3, 4]

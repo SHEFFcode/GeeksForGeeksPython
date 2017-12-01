@@ -5,31 +5,31 @@ class DijkstrasShortestPath:
 
     def run(self, graph, start_vertex):
         dist = [None] * self.vertex_count  # set up the output array, dist[i] will hold short path from start to i
-        shortest_path_set_for_items = [None] * self.vertex_count  # this will contain items with shortest path set
+        shortest_path_set_for_item = [None] * self.vertex_count  # this will contain items with shortest path set
 
         for i in range(0, self.vertex_count):
             dist[i] = sys.maxint  # we begin by setting all distances from start as infinite
-            shortest_path_set_for_items[i] = False  # we set all shortest path set vars to false
+            shortest_path_set_for_item[i] = False  # we set all shortest path set vars to false
 
         dist[start_vertex] = 0  # distance from starting element to itself is always 0
 
-        for count in range(0, self.vertex_count - 1):  # find shortest path for all vertices
-            u = self._min_distance(dist, shortest_path_set_for_items)
-            shortest_path_set_for_items[u] = True  # mark off the index, we found its shortest path
-            for v in range(0, self.vertex_count):  # update the value of the adjacent vertices of the picked vertex
-                if shortest_path_set_for_items is not True and graph[u][v] != 0 and dist[u] != sys.maxint \
-                        and dist[u] + graph[u][v] < dist[v]:
-                    dist[v] = dist[u] + graph[u][v]
+        for row in range(0, self.vertex_count - 1):  # find shortest path for all vertices
+            min_distance_index = self._min_distance(dist, shortest_path_set_for_item)
+            shortest_path_set_for_item[min_distance_index] = True  # mark off the index, we found its shortest path
+            for column_vertex in range(0, self.vertex_count):  # update the value of the adjacent vertices of the picked vertex
+                if shortest_path_set_for_item[column_vertex] is not True and graph[min_distance_index][column_vertex] != 0 and dist[min_distance_index] != sys.maxint \
+                        and dist[min_distance_index] + graph[min_distance_index][column_vertex] < dist[column_vertex]:
+                    dist[column_vertex] = dist[min_distance_index] + graph[min_distance_index][column_vertex]
 
         self._print_solution(dist)
 
     def _min_distance(self, dist, shortest_path_set_for_items):  # function to find the min distance between vertices
         min_item = 0
         min_index = -1
-        for v in range(0, self.vertex_count):
-            if shortest_path_set_for_items[v] is False and dist[v] <= min_item:
-                min_item = dist[v]
-                min_index = v
+        for vertex in range(0, self.vertex_count):
+            if shortest_path_set_for_items[vertex] is False and dist[vertex] <= min_item:
+                min_item = dist[vertex]
+                min_index = vertex
         return min_index
 
     def _print_solution(self, dist):
