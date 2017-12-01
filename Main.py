@@ -5,13 +5,17 @@ class Main:
     from Greedy.ActivitySelection import ActivitySelection
     from Greedy.MinNumberOfPlatforms import MinNumberOfPlatforms
     import datetime
+    from Greedy.MinNumberOfCoins import MinNumberOfCoins
 
-    min_number_of_platforms = MinNumberOfPlatforms()
-    min_number_of_platforms.run([datetime.time(9, 0), datetime.time(9, 40), datetime.time(9, 50), datetime.time(11, 00),
-                                datetime.time(18, 00)],
-                                [datetime.time(9, 10), datetime.time(12, 00), datetime.time(11, 20),
-                                datetime.time(11, 30), datetime.time(19, 00), datetime.time(20, 00)]
-                                )
+    min_number_of_coins = MinNumberOfCoins()
+    min_number_of_coins.run([1, 2, 5, 10, 20, 50, 100], 121)
+
+    # min_number_of_platforms = MinNumberOfPlatforms()
+    # min_number_of_platforms.run([datetime.time(9, 0), datetime.time(9, 40), datetime.time(9, 50), datetime.time(11, 00),
+    #                             datetime.time(18, 00)],
+    #                             [datetime.time(9, 10), datetime.time(12, 00), datetime.time(11, 20),
+    #                             datetime.time(11, 30), datetime.time(19, 00), datetime.time(20, 00)]
+    #                             )
 
     # activitySelection = ActivitySelection()
     # activitySelection.run([1, 3, 0, 5, 8, 5], [2, 4, 6, 7, 9, 9])
