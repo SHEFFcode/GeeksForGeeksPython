@@ -56,6 +56,9 @@ of various algorithms along with video explanations and links to relevant resour
   * [Theory]()
   * [Code Link](https://github.com/SHEFFcode/GeeksForGeeks/blob/master/GeeksForGeeks/Greedy/DitkasAlgo.cs)
   * Video Link (coming soon)
+* Minimum Number of Platforms:
+  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Greedy/MinNumberOfPlatforms.md)
+  * [Code](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Greedy/MinNumberOfPlatforms.py)
 * Minimum Number of Coins:
   * [Theory]()
   * [Code]()
