@@ -53,8 +53,8 @@ of various algorithms along with video explanations and links to relevant resour
   * [Code Link](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Greedy/ActivitySelection.py)
   * Video Link (coming soon)
 * Dijkstra's Algorithm (I call it ditkas, so sue me):
-  * [Theory]()
-  * [Code Link](https://github.com/SHEFFcode/GeeksForGeeks/blob/master/GeeksForGeeks/Greedy/DitkasAlgo.cs)
+  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Greedy/DitkasAlgo.md)
+  * [Code Link](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Greedy/DijkstrasShortestPath.py)
   * Video Link (coming soon)
 * Minimum Number of Platforms:
   * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Greedy/MinNumberOfPlatforms.md)
