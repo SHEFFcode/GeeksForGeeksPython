@@ -4,12 +4,8 @@ class DijkstrasShortestPath:
     vertex_count = 9  # Just setting the number of vertices here, in the real world you would calculate.
 
     def run(self, graph, start_vertex):
-        dist = [None] * self.vertex_count  # set up the output array, dist[i] will hold short path from start to i
-        shortest_path_set_for_item = [None] * self.vertex_count  # this will contain items with shortest path set
-
-        for i in range(0, self.vertex_count):
-            dist[i] = sys.maxint  # we begin by setting all distances from start as infinite
-            shortest_path_set_for_item[i] = False  # we set all shortest path set vars to false
+        dist = [sys.maxint] * self.vertex_count  # set up the output array, dist[i] will hold short path from start to i
+        shortest_path_set_for_item = [False] * self.vertex_count  # this will contain items with shortest path set
 
         dist[start_vertex] = 0  # distance from starting element to itself is always 0
 
@@ -24,7 +20,7 @@ class DijkstrasShortestPath:
         self._print_solution(dist)
 
     def _min_distance(self, dist, shortest_path_set_for_items):  # function to find the min distance between vertices
-        min_item = 0
+        min_item = sys.maxint
         min_index = -1
         for vertex in range(0, self.vertex_count):
             if shortest_path_set_for_items[vertex] is False and dist[vertex] <= min_item:
