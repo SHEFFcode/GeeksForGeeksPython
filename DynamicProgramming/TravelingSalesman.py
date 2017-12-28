@@ -5,6 +5,24 @@ class TravelingSalesman:
     def __init__(self):
         pass
 
+    class Stack:
+        def __init__(self):
+            self.items = []
+
+        def __iter__(self):
+            length = len(self.items)
+            i = 0
+            while i < length:
+                yield self.pop()
+                i += 1
+            raise StopIteration
+
+        def push(self, item):
+            self.items.append(item)
+
+        def pop(self):
+            return self.items.pop()
+
     class Index:
         def __init__(self, current_vertex, set_of_vertices):
             self.current_vertex = current_vertex
@@ -18,7 +36,7 @@ class TravelingSalesman:
         def __eq__(self, other):
             if isinstance(other, type(self)) is not True:
                 return False
-            if other.current_vertex == self.current_vertex and set(other.set_of_vertices) == set(self.set_of_vertices):
+            if other.current_vertex == self.current_vertex and other.set_of_vertices == self.set_of_vertices:
                 return True
             return False
 
@@ -32,7 +50,7 @@ class TravelingSalesman:
                 if current_vertex in current_set:
                     continue
 
-                index = self.Index(current_vertex, current_set)
+                index = self.Index(current_vertex, set(current_set))
                 min_cost_value = sys.maxint
                 min_previous_index = 0
                 copy_set = set(current_set)
@@ -44,11 +62,11 @@ class TravelingSalesman:
                         min_cost_value = cost
                         min_previous_index = previous_vertex
 
-                    if len(current_set) == 0:
-                        min_cost_value = graph_array[0][current_vertex]
+                if len(current_set) == 0:
+                    min_cost_value = graph_array[0][current_vertex]
 
-                    minimum_cost_dictionary.update({index: min_cost_value})
-                    parent_node_dictionary.update({index: min_previous_index})
+                minimum_cost_dictionary.update({index: min_cost_value})
+                parent_node_dictionary.update({index: min_previous_index})
 
         set_to_home = set()
         for i in range(1, len(graph_array)):
@@ -82,11 +100,12 @@ class TravelingSalesman:
         for i in range(0, length):
             current_set.add(i)
         start = 0
-        stack = []
+        stack = self.Stack()
 
         while True:
-            stack.append(start)
-            current_set.remove(start)
+            stack.push(start)
+            if start in current_set:
+                current_set.remove(start)
             key = self.Index(start, current_set)
             if key in parent_node_dictionary:
                 start = parent_node_dictionary[key]
