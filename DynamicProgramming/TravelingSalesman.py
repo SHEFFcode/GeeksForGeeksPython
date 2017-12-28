@@ -38,17 +38,17 @@ class TravelingSalesman:
                 copy_set = set(current_set)
 
                 for previous_vertex in current_set:
-                    cost = graph_array[previous_vertex, current_vertex] + self.get_cost(copy_set, previous_vertex,
+                    cost = graph_array[previous_vertex][current_vertex] + self.get_cost(copy_set, previous_vertex,
                                                                                         minimum_cost_dictionary)
                     if cost < min_cost_value:
                         min_cost_value = cost
                         min_previous_index = previous_vertex
 
-                    if len(current_set == 0):
-                        min_cost_value = graph_array[0, current_vertex]
+                    if len(current_set) == 0:
+                        min_cost_value = graph_array[0][current_vertex]
 
-                    minimum_cost_dictionary.update({index, min_cost_value})
-                    parent_node_dictionary.update({index, min_previous_index})
+                    minimum_cost_dictionary.update({index: min_cost_value})
+                    parent_node_dictionary.update({index: min_previous_index})
 
         set_to_home = set()
         for i in range(1, len(graph_array)):
@@ -58,12 +58,12 @@ class TravelingSalesman:
 
         copy_set_to_home = set(set_to_home)
         for vertex in set_to_home:
-            cost = graph_array[vertex, 0] + self.get_cost(copy_set_to_home, vertex, minimum_cost_dictionary)
+            cost = graph_array[vertex][0] + self.get_cost(copy_set_to_home, vertex, minimum_cost_dictionary)
             if cost < min_value:
                 min_value = cost
                 prev_vertex = vertex
 
-        parent_node_dictionary.update({self.Index(0, set_to_home), prev_vertex})
+        parent_node_dictionary.update({self.Index(0, set_to_home): prev_vertex})
         self.print_tour(parent_node_dictionary, len(graph_array))
         print(min_value)
         return min_value
@@ -95,14 +95,14 @@ class TravelingSalesman:
 
         output = ""
         for vertex in stack:
-            output += vertex + "->"
+            output += (str(vertex) + "->")
         output = output[:-2]
         print(output)
 
     def generate_all_possible_sets(self, graph_array):
-        input_array = []
-        result_array = []
-        for i in range(0, len(graph_array)):
+        input_array = [None] * (len(graph_array) - 1)
+        result_array = [None] * (len(graph_array) - 1)
+        for i in range(0, len(graph_array) - 1):
             input_array[i] = i + 1
         all_sets = set()
         self.set_up_all_possible_sets(input_array, result_array, 0, 0, all_sets)
@@ -121,11 +121,12 @@ class TravelingSalesman:
     @staticmethod
     def generate_set(result_array, pos):
         if pos == 0:
-            return set()
+            return frozenset()
         return_set = set()
         for i in range(0, pos):
-            set.add(result_array[i])
-        return return_set
+            return_set.add(result_array[i])
+        return_frozen_set = frozenset(return_set)
+        return return_frozen_set
 
 
 

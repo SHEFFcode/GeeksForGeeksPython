@@ -7,12 +7,22 @@ class Main:
     import datetime
     from Greedy.MinNumberOfCoins import MinNumberOfCoins
     from Greedy.DijkstrasShortestPath import DijkstrasShortestPath
+    from DynamicProgramming import TravelingSalesman
 
-    ditkas_shortest_path = DijkstrasShortestPath()
-    graph = [[0, 4, 0, 0, 0, 0, 0, 8, 0], [4, 0, 8, 0, 0, 0, 0, 11, 0], [0, 8, 0, 7, 0, 4, 0, 0, 2],
-             [0, 0, 7, 0, 9, 14, 0, 0, 0], [0, 0, 0, 9, 0, 10, 0, 0, 0], [0, 0, 4, 14, 10, 0, 2, 0, 0],
-             [0, 0, 0, 0, 0, 2, 0, 1, 6], [8, 11, 0, 0, 0, 0, 1, 0, 7], [0, 0, 2, 0, 0, 0, 6, 7, 0]]
-    ditkas_shortest_path.run(graph, 0)
+    traveling_salesman = TravelingSalesman.TravelingSalesman()
+    graph = [
+        [0, 1, 15, 6],
+        [2, 0, 7, 3],
+        [9, 6, 0, 12],
+        [10, 4, 8, 0]
+    ]
+    traveling_salesman.calculate_cost(graph)
+
+    # ditkas_shortest_path = DijkstrasShortestPath()
+    # graph = [[0, 4, 0, 0, 0, 0, 0, 8, 0], [4, 0, 8, 0, 0, 0, 0, 11, 0], [0, 8, 0, 7, 0, 4, 0, 0, 2],
+    #          [0, 0, 7, 0, 9, 14, 0, 0, 0], [0, 0, 0, 9, 0, 10, 0, 0, 0], [0, 0, 4, 14, 10, 0, 2, 0, 0],
+    #          [0, 0, 0, 0, 0, 2, 0, 1, 6], [8, 11, 0, 0, 0, 0, 1, 0, 7], [0, 0, 2, 0, 0, 0, 6, 7, 0]]
+    # ditkas_shortest_path.run(graph, 0)
 
     # min_number_of_coins = MinNumberOfCoins()
     # min_number_of_coins.run([1, 2, 5, 10, 20, 50, 100], 121)
