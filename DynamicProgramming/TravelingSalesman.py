@@ -146,6 +146,3 @@ class TravelingSalesman:
             return_set.add(result_array[i])
         return_frozen_set = frozenset(return_set)
         return return_frozen_set
-
-
-
