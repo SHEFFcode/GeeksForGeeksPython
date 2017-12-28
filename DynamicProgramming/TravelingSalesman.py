@@ -13,7 +13,7 @@ class TravelingSalesman:
             length = len(self.items)
             i = 0
             while i < length:
-                yield self.pop()
+                yield self.items[length - 1 - i]
                 i += 1
             raise StopIteration
 
