@@ -11,9 +11,16 @@ class Main:
     from DynamicProgramming import LCS
     from DynamicProgramming import LIS
     from DynamicProgramming import  LPS
+    from DynamicProgramming import Fibonacci
 
-    lps = LPS.LPS()
-    print(lps.run_lps("BBABCBCAB"))
+    fibonacci = Fibonacci.Fibonacci()
+    print(fibonacci.run_recursive(6))
+    print(fibonacci.run_memoization(6))
+    print(fibonacci.run_tabulation(6))
+
+
+    # lps = LPS.LPS()
+    # print(lps.run_lps("BBABCBCAB"))
 
     # lis = LIS.LIS()
     # print(lis.run_lis([10, 22, 9, 33, 21, 50, 41, 60], 8))
