@@ -12,11 +12,15 @@ class Main:
     from DynamicProgramming import LIS
     from DynamicProgramming import  LPS
     from DynamicProgramming import Fibonacci
+    from Greedy import WWP
 
-    fibonacci = Fibonacci.Fibonacci()
-    print(fibonacci.run_recursive(6))
-    print(fibonacci.run_memoization(6))
-    print(fibonacci.run_tabulation(6))
+    wwp = WWP.WWP()
+    wwp.run_wwp("aaa bb cc dddd")
+
+    # fibonacci = Fibonacci.Fibonacci()
+    # print(fibonacci.run_recursive(6))
+    # print(fibonacci.run_memoization(6))
+    # print(fibonacci.run_tabulation(6))
 
 
     # lps = LPS.LPS()
