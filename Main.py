@@ -8,15 +8,19 @@ class Main:
     from Greedy.MinNumberOfCoins import MinNumberOfCoins
     from Greedy.DijkstrasShortestPath import DijkstrasShortestPath
     from DynamicProgramming import TravelingSalesman
+    from DynamicProgramming import LCS
 
-    traveling_salesman = TravelingSalesman.TravelingSalesman()
-    graph = [
-        [0, 1, 15, 6],
-        [2, 0, 7, 3],
-        [9, 6, 0, 12],
-        [10, 4, 8, 0]
-    ]
-    traveling_salesman.calculate_cost(graph)
+    lcs = LCS.LCS()
+    print(lcs.run_lcs("AGGTAB", "GTXTXAYB", 6, 8))
+
+    # traveling_salesman = TravelingSalesman.TravelingSalesman()
+    # graph = [
+    #     [0, 1, 15, 6],
+    #     [2, 0, 7, 3],
+    #     [9, 6, 0, 12],
+    #     [10, 4, 8, 0]
+    # ]
+    # traveling_salesman.calculate_cost(graph)
 
     # ditkas_shortest_path = DijkstrasShortestPath()
     # graph = [[0, 4, 0, 0, 0, 0, 0, 8, 0], [4, 0, 8, 0, 0, 0, 0, 11, 0], [0, 8, 0, 7, 0, 4, 0, 0, 2],
