@@ -1,5 +1,6 @@
 class WWP:
-    def run_wwp(self, input_sequence, maximum=6):
+    @staticmethod
+    def run_wwp(input_sequence, maximum=6):
         line = ""
         words = input_sequence.split(" ")
         for word in words:
