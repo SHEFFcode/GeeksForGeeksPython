@@ -9,9 +9,13 @@ class Main:
     from Greedy.DijkstrasShortestPath import DijkstrasShortestPath
     from DynamicProgramming import TravelingSalesman
     from DynamicProgramming import LCS
+    from DynamicProgramming import LIS
 
-    lcs = LCS.LCS()
-    print(lcs.run_lcs("AGGTAB", "GTXTXAYB", 6, 8))
+    lis = LIS.LIS()
+    print(lis.run_lis([10, 22, 9, 33, 21, 50, 41, 60], 8))
+
+    # lcs = LCS.LCS()
+    # print(lcs.run_lcs("AGGTAB", "GTXTXAYB", 6, 8))
 
     # traveling_salesman = TravelingSalesman.TravelingSalesman()
     # graph = [
