@@ -15,6 +15,16 @@ class Main:
     from Greedy import WWP
     from DataStructures import LinkedList
     from DataStructures import Graph
+    from DataStructures import Queue
+
+    q = Queue.Queue(10)
+    q.enqueue(3)
+    print(q.get_front())
+    q.enqueue(4)
+    q.dequeue()
+    print(q.get_front())
+    print(q.get_rear())
+    x = 0
 
     # graph = Graph.Graph(5)
     # graph.add_edge(0, 3)
