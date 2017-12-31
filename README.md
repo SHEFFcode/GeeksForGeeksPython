@@ -81,35 +81,35 @@ links to relevant resources.
 
 ### Data Structures
 * Graph
-  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksJS/blob/master/DataStructures/Graph.md)
-  * [Code](https://github.com/SHEFFcode/GeeksForGeeksJS/blob/master/DataStructures/Graph.js)
+  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/DataStructures/Graph.md)
+  * [Code](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/DataStructures/Graph.py)
 * Swap
-  * [Code](https://github.com/SHEFFcode/GeeksForGeeks/blob/master/GeeksForGeeks/DataStructures/Swap.cs)
+  * [Code](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/DataStructures/Swap.py)
 * Linked List
-  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksJS/blob/master/DataStructures/LinkedList.md)
-  * [Code](https://github.com/SHEFFcode/GeeksForGeeksJS/blob/master/DataStructures/LinkedList.js)
+  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/DataStructures/LinkedList.md)
+  * [Code](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/DataStructures/LinkedList.py)
 * Stack
-  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksJS/blob/master/DataStructures/Stack.md)
-  * [Code](https://github.com/SHEFFcode/GeeksForGeeksJS/blob/master/DataStructures/Stack.js)
+  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/DataStructures/Stack.md)
+  * [Code](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/DataStructures/Stack.py)
 * Queue
-  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksJS/blob/master/DataStructures/Queue.md)
-  * [Code](https://github.com/SHEFFcode/GeeksForGeeksJS/blob/master/DataStructures/Queue.js)
+  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/DataStructures/Queue.md)
+  * [Code](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/DataStructures/Queue.py)
 * Hash
-  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksJS/blob/master/DataStructures/Hash.md)
-  * [Code](https://github.com/SHEFFcode/GeeksForGeeksJS/blob/master/DataStructures/HashTable.js)
+  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/DataStructures/Hash.md)
+  * [Code](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/DataStructures/Hash.py)
 * Binary Search Tree
-  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksJS/blob/master/DataStructures/BinarySearchTree.md)
-  * [Code](https://github.com/SHEFFcode/GeeksForGeeksJS/blob/master/DataStructures/BinarySearchTree.js)
+  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/DataStructures/BinarySearchTree.md)
+  * [Code](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/DataStructures/BinarySearchTree.py)
 
 ### Systems Design
 * Patterns
-  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksJS/blob/master/SystemsDesign/DesignPatterns.md)
+  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/SystemsDesign/DesignPatterns.md)
 * Class Structure
-  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksJS/blob/master/SystemsDesign/ClassStructure.md)
+  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/SystemsDesign/ClassStructure.md)
 * Caching
-  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksJS/blob/master/SystemsDesign/Caching.md)
+  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/SystemsDesign/Caching.md)
 * Scalability
-  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksJS/blob/master/SystemsDesign/Scalability.md)
+  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/SystemsDesign/Scalability.md)
 
 ### Mathematics
 * Probability
@@ -118,13 +118,13 @@ links to relevant resources.
 
 ### Operating Systems
 * Basics
-  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksJS/blob/master/OperatingSystems/Basics.md)
+  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/OperatingSystems/Basics.md)
 * Processes, threads and concurrency
-  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksJS/blob/master/OperatingSystems/Threading.md)
+  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/OperatingSystems/Threading.md)
 * Locks, mutexes, semaphores and monitors.
-  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksJS/blob/master/OperatingSystems/LoMuSeMo.md)
+  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/OperatingSystems/LoMuSeMo.md)
 * Deadlock and Livelock
-  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksJS/blob/master/OperatingSystems/Deadlock.md)
+  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/OperatingSystems/Deadlock.md)
 
 ### Cracking Coding Interview Slides
 * [Cracking Coding Interview Slides](https://www.slideshare.net/gayle2/cracking-the-coding-interview-40140660)
