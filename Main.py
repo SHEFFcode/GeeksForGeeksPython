@@ -13,9 +13,28 @@ class Main:
     from DynamicProgramming import  LPS
     from DynamicProgramming import Fibonacci
     from Greedy import WWP
+    from DataStructures import LinkedList
+    from DataStructures import Graph
 
-    wwp = WWP.WWP()
-    wwp.run_wwp("aaa bb cc dddd")
+    # graph = Graph.Graph(5)
+    # graph.add_edge(0, 3)
+    # graph.remove_edge(3, 0)
+    # x = 0
+    #
+    # graph = Graph.GraphMatrix(5)
+    # graph.add_edge(0, 3)
+    # graph.remove_edge(3, 0)
+    # y = 0
+
+    # linked_list = LinkedList.LinkedList()
+    # linked_list.add_node(3)
+    # linked_list.add_node(4)
+    # linked_list.remove_node(4)
+
+
+
+    # wwp = WWP.WWP()
+    # wwp.run_wwp("aaa bb cc dddd")
 
     # fibonacci = Fibonacci.Fibonacci()
     # print(fibonacci.run_recursive(6))
