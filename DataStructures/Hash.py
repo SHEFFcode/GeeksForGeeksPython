@@ -1,7 +1,7 @@
 class CustomHash:
     def __init__(self, size):
         self.buckets = size
-        self.container = [[() * self.buckets] * self.buckets]
+        self.container = [[]] * self.buckets
         self.size = 0
 
     def hash(self, string_to_hash):
@@ -9,12 +9,12 @@ class CustomHash:
         char_array_of_input = list(string_to_hash)
         for i in range(len(string_to_hash)):
             character = char_array_of_input[i]
-            hash_code = ((hash_code << 5) + hash_code) + character
+            hash_code = ((hash_code << 5) + hash_code) + ord(character)
         return hash_code % self.buckets
 
     def insert(self, key, value):
         index = self.hash(key)
-        if len(self.container) == 0:
+        if len(self.container[index]) == 0:
             self.container[index].append((key, value))
             self.size += 1
         else:

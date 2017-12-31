@@ -16,15 +16,21 @@ class Main:
     from DataStructures import LinkedList
     from DataStructures import Graph
     from DataStructures import Queue
+    from DataStructures import Hash
 
-    q = Queue.Queue(10)
-    q.enqueue(3)
-    print(q.get_front())
-    q.enqueue(4)
-    q.dequeue()
-    print(q.get_front())
-    print(q.get_rear())
+    hash = Hash.CustomHash(8)
+    hash.insert("hello", 3)
+    print(hash.retrieve("hello"))
     x = 0
+
+    # q = Queue.Queue(10)
+    # q.enqueue(3)
+    # print(q.get_front())
+    # q.enqueue(4)
+    # q.dequeue()
+    # print(q.get_front())
+    # print(q.get_rear())
+    # x = 0
 
     # graph = Graph.Graph(5)
     # graph.add_edge(0, 3)
