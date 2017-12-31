@@ -17,11 +17,20 @@ class Main:
     from DataStructures import Graph
     from DataStructures import Queue
     from DataStructures import Hash
+    from DataStructures import BinarySearchTree
 
-    hash = Hash.CustomHash(8)
-    hash.insert("hello", 3)
-    print(hash.retrieve("hello"))
+    bst = BinarySearchTree.BinarySearchTree()
+    bst.insert(3)
+    bst.insert(4)
+    bst.delete(4)
+    print(bst.search(3))
+    print(bst.search(4))
     x = 0
+
+    # hash = Hash.CustomHash(8)
+    # hash.insert("hello", 3)
+    # print(hash.retrieve("hello"))
+    # x = 0
 
     # q = Queue.Queue(10)
     # q.enqueue(3)
