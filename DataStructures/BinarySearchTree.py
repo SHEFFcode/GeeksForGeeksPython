@@ -55,7 +55,7 @@ class BinarySearchTree:
             to_insert = 0
             for i in range(0, len(temp)):
                 to_insert = temp[i]
-                self.insert(toInsert)
+                self.insert(to_insert)
             print("Value {0} was deleted".format(delete_value))
 
     def _roundup(self, current_node, temp, delete_value):
