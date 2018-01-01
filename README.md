@@ -113,8 +113,11 @@ links to relevant resources.
 
 ### Mathematics
 * Probability
+  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Math/Probability.md)
 * Combinatronics
-* n choose k problems
+  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Math/Combinatronics.md)
+* N choose K problems
+  * [Theory](https://github.com/SHEFFcode/GeeksForGeeksPython/blob/master/Math/NChooseK.md)
 
 ### Operating Systems
 * Basics
